@@ -80,7 +80,12 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 
+  box-shadow:  20px 20px 60px #070514,
+             -20px -20px 60px #09071c;
+
+
   animation: moveNotification infinite ease-in-out 3s;
+
 }
 
 @keyframes moveNotification {
@@ -127,19 +132,26 @@ body {
   animation-delay: 200ms;
 }
 
+#home .content .notification.five {
+  bottom: -10rem;
+  left: 17rem;
+  animation-delay: 400ms;
+  display: none;
+}
+
 #home .content .text {
   margin-top: -15rem;
 }
 
-#home .content .text img {
-  width: 15rem;
+#home .content .text img.logo {
+  width: 10rem;
   margin-bottom: 1rem;
 }
 
 #home .content .text h1 {
   color: var(--color-white);
   font-weight: 200;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -158,16 +170,17 @@ body {
   background: transparent;
   border: 1px solid #281b8c;
 
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.8rem;
   font-family: var(--interV);
-
+  opacity: .7;
   transition: all 200ms ease-in-out;
 }
 
 #home .content .text a button:hover {
   cursor: pointer;
   border: 1px solid #321dd4;
+  opacity: 1;
 }
 
 .mundo {
@@ -303,33 +316,52 @@ body {
 
   header#home .content .notification {
     transform: scale(.9);
+    animation: moveNotification infinite ease-in-out 5s;
   }
 
   @keyframes moveNotification {
     50% {
-      transform: translateY(5px) scale(.92);
+      transform: translateY(9px) scale(.92);
     }
   }
   
   header#home .content .notification.one {
-    bottom: -30rem;
+    bottom: -36rem;
     left: 25rem;
+
+    animation-delay: 1000ms;
   }
   
   header#home .content .notification.two {
-    bottom: -45rem;
-    left: 30rem;
+    bottom: -50rem;
+    left: 34rem;
     display: flex;
+
+    animation-delay: 1300ms;
   }
   
   header#home .content .notification.three {
-    bottom: -15rem;
+    bottom: -22rem;
     left: 22rem;
+
+    animation-delay: 700ms;
   }
   
   header#home .content .notification.for {
-    bottom: 0;
-    left: 22rem;
+    bottom: -8rem;
+    left: 19rem;
+
+    animation-delay: 400ms;
+
+  }
+  
+  header#home .content .notification.five {
+    display: flex;
+    bottom: 6rem;
+    left: 26rem;
+
+    animation-delay: 100ms;
+
   }
 
   header#home .content .text {
@@ -338,6 +370,10 @@ body {
 
   header#home .content .text h1 {
     font-size: 4.5rem;
+  }
+
+  header#home .content .text a button {
+    font-size: 2rem;
   }
 
   header#home .mundo {
