@@ -1,29 +1,5 @@
-:root {
-  font-size: 62.5%;
 
-  --primary-color: #7033FF;
-  --secondy-color: #5345F9;
-  --gradient: linear-gradient(to right, #7033FF 0%, #5345F9 100%);
-  --gradient-invert: linear-gradient(to right, #5345F9 0%, #7033FF 100%);
 
-  --color-black: #080618;
-  --color-white: #EDECFE;
-
-  --black-900: #020202;
-  --black-800: #090909;
-  --black-700: #0b0b0b;
-
-  --nav-height: 7.2rem;
-
-  --interV: 'interV';
-  --Rebond: 'Rebond';
-  --RebondBold: 'RebondBold';
-  --RebondLight: 'RebondLight';
-}  
-
-body {
-  background-color: var(--color-white);
-}
 
 #home { 
   background: var(--color-black);
@@ -46,6 +22,17 @@ body {
              -20px -20px 60px #050556;
 }
 
+#particles-js {
+  background-color: transparent;
+  opacity: .7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
 #home .content {
   width: 100%;
   height: 100vh;
@@ -54,7 +41,6 @@ body {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  
   text-align: left;
 }
 
@@ -141,6 +127,8 @@ body {
 
 #home .content .text {
   margin-top: -15rem;
+  z-index: 2;
+
 }
 
 #home .content .text img.logo {
@@ -153,6 +141,20 @@ body {
   font-weight: 200;
   font-size: 3rem;
   margin-bottom: 2rem;
+
+  position: relative;
+  margin-left: 2rem;
+}
+
+#home .content .text h1::after {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--color-white);
+  border-radius: 1rem;
 }
 
 #home .content .text h1 span {
@@ -175,6 +177,11 @@ body {
   font-family: var(--interV);
   opacity: .7;
   transition: all 200ms ease-in-out;
+
+  backdrop-filter: blur(42px) saturate(180%);
+  -webkit-backdrop-filter: blur(42px) saturate(180%);
+  background-color: rgba(138, 138, 138, 0.084);
+  border-radius: 12px;
 }
 
 #home .content .text a button:hover {
@@ -334,7 +341,7 @@ body {
   
   header#home .content .notification.two {
     bottom: -50rem;
-    left: 34rem;
+    left: 37rem;
     display: flex;
 
     animation-delay: 1300ms;
@@ -342,14 +349,14 @@ body {
   
   header#home .content .notification.three {
     bottom: -22rem;
-    left: 22rem;
+    left: 20rem;
 
     animation-delay: 700ms;
   }
   
   header#home .content .notification.for {
     bottom: -8rem;
-    left: 19rem;
+    left: 15rem;
 
     animation-delay: 400ms;
 
@@ -358,7 +365,7 @@ body {
   header#home .content .notification.five {
     display: flex;
     bottom: 6rem;
-    left: 26rem;
+    left: 21rem;
 
     animation-delay: 100ms;
 

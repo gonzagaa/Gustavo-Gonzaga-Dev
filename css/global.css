@@ -49,6 +49,10 @@
     --RebondLight: 'RebondLight';
 }  
 
+body {
+  background-color: var(--color-white);
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -111,6 +115,10 @@ html {
     .wrapper {
       width: min(112rem, 100%);
     }
+
+    :root {
+      font-size: 64%;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -123,11 +131,19 @@ html {
     .wrapper {
       width: min(150rem, 100%);
     }
+
+    :root {
+      font-size: 65%;
+    }
   }
 
   @media (min-width: 1700px) {
     .wrapper {
       width: min(160rem, 100%);
+    }
+
+    :root {
+      font-size: 67%;
     }
   }
   
