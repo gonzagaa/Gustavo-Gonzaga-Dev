@@ -33,6 +33,7 @@
     --secondy-color: #5345F9;
     --gradient: linear-gradient(to right, #7033FF 0%, #5345F9 100%);
     --gradient-invert: linear-gradient(to right, #5345F9 0%, #7033FF 100%);
+    --gradient-green: linear-gradient(to right, #c2ff33 0%, rgb(168, 255, 46) 100%);
 
     --color-black: #080618;
     --color-white: #EDECFE;

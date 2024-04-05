@@ -155,14 +155,14 @@ body.menu-expanded .menu {
   top: 0;
   right: 0;
 
-  width: 70vw;
+  width: 100vw;
   height: max-content;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
 
   padding: 2rem;
   padding-top: var(--nav-height);
@@ -170,11 +170,11 @@ body.menu-expanded .menu {
   transition: transform 300ms;
   transform: translateX(0);
 
-  backdrop-filter: blur(26px) saturate(180%);
-  -webkit-backdrop-filter: blur(26px) saturate(180%);
-  background-color: rgba(0, 0, 0, 0.442);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(37, 37, 37, 0.16);
+  border-radius: 0;
+  border: 1px solid rgba(63, 63, 63, 0.125);
 
   box-shadow: -7px -7px 30px #00031ac0;
 }
