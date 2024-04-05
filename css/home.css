@@ -143,18 +143,6 @@
   margin-bottom: 2rem;
 
   position: relative;
-  margin-left: 2rem;
-}
-
-#home .content .text h1::after {
-  content: '';
-  position: absolute;
-  left: -2rem;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: var(--color-white);
-  border-radius: 1rem;
 }
 
 #home .content .text h1 span {
@@ -377,6 +365,18 @@
 
   header#home .content .text h1 {
     font-size: 4.5rem;
+    margin-left: 2rem;
+  }
+
+  header#home .content .text h1::after {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--color-white);
+    border-radius: 1rem;
   }
 
   header#home .content .text a button {
